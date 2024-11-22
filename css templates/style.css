@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(346deg, 17%, 70%);
+    display: flex;
+}
+
+.part1 {
+    height: 100%;
+    width: 26%;
+    /* background-color: red; */
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(347, 14%, 75%, 0.199);
+}
+
+.part2 {
+    height: 100%;
+    width: 68%;
+    background-color: rgb(0, 119, 255);
+    background-image: url(https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1vZGVsJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.part3 {
+    height: 100%;
+    width: 7%;
+    /* background-color: rgb(115, 255, 0); */
+}
+
+.text-div {
+    /* height: 300px;  */
+    position: absolute;
+    width: 400px;
+    /* background-color: red;  */
+    left: 7%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.text-div h1 {
+    font-size: 95px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 78px;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.small-img {
+    height: 400px;
+    width: 300px;
+    background-image: url(https://images.unsplash.com/photo-1645231881968-9c98338ee28d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vZGVsJTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D);
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlayin {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(347, 14%, 75%, 0.199);
+}
+
+.verti-text {
+    position: absolute;
+    /* width: 100%;  */
+    /* background-color: red; */
+     right: -54%;
+    transform-origin: 0% 0%; 
+    transform: rotate(90deg);  
+    top: -5%; 
+  
+}
+
+.verti-text h1 {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 15px;
+   text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    color: transparent; 
+    animation: vivekanimation ;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+    animation-direction: alternate-reverse;
+
+} 
+
+@keyframes vivekanimation{
+    from{
+
+    } 
+    to{
+        transform: translateX(10px);
+    }
+}
